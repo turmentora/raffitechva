@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radoslav Ivanov-Jones | Tech & Automation Virtual Assistant</title>
+  <meta name="description" content="Technical Virtual Assistant specializing in Power Platform workflows, data automation, and executive-level administrative support." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#home">Radoslav <span class="text-accent">Tech VA</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" role="menu">
+        <li><a href="#services" role="menuitem">Services</a></li>
+        <li><a href="#experience" role="menuitem">Experience</a></li>
+        <li><a class="cta" href="#contact" role="menuitem">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="availability">Available for retainer & project-based support</p>
+        <h1>Executive Administration meets <span class="text-accent">Technical Automation</span></h1>
+        <p>
+          I bridge the gap between complex digital workflows and calm, reliable client care. From building custom document-sorting applications and Power Platform automations to handling high-volume telephony and decision-ready executive briefs, I build systems that save you time and eliminate operational chaos.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Discuss a Project</a>
+          <a class="btn secondary" href="#services">View Services</a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+      <h2>Core Capabilities</h2>
+      <p class="section-subtitle">Delivering precision across administration, communication, and technology.</p>
+      
+      <div class="cards">
+        <article class="card tech-card">
+          <div class="card-icon">⚙️</div>
+          <h3>Technical & Automation</h3>
+          <p>Streamlining your backend operations with custom scripts and robust platform integrations.</p>
+          <ul class="bullets">
+            <li><strong>Microsoft Power Platform:</strong> Designing automated workflows and dashboards.</li>
+            <li><strong>Data Processing:</strong> Python scripting for automated data entry and document sorting.</li>
+            <li><strong>Web Management:</strong> HTML and JSON configuration for site updates and data formatting.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📁</div>
+          <h3>Executive Administration</h3>
+          <p>High-level administrative support designed to keep operations inspection-ready and efficient.</p>
+          <ul class="bullets">
+            <li><strong>Backlog Recovery:</strong> Proven ability to clear overdue operational tasks rapidly and accurately.</li>
+            <li><strong>Document Prep:</strong> Compiling decision-ready briefs, reports, and meticulous audit trails.</li>
+            <li><strong>Inbox & Calendar:</strong> Priority-based triage to ensure focused days.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">📞</div>
+          <h3>Telephony & Client Care</h3>
+          <p>Confident, empathetic communication that resolves issues and builds trust.</p>
+          <ul class="bullets">
+            <li><strong>Call Handling:</strong> Calm management of high-volume or complex client queries.</li>
+            <li><strong>Closed-Loop Follow Up:</strong> Accurate call notes, routing, and actionable summaries.</li>
+            <li><strong>Stakeholder Comms:</strong> Professional, clear updates across all business levels.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <h2>Proven Track Record</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>Casework & Operational Excellence</h3>
+          <p>Led comprehensive backlog recovery projects, successfully reducing overdue operational cases by over <strong>50% within a four-week period</strong>. Built systems to maintain velocity without sacrificing meticulous attention to detail.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>Executive Support & Governance</h3>
+          <p>Coordinated critical meetings and prepared concise, risk-assessed briefs for decision-makers. Maintained strict action registers and follow-up cadences to ensure projects advanced smoothly.</p>
+        </article>
+        <article class="timeline-item">
+          <h3>High-Volume Telephony</h3>
+          <p>Handled complex, sensitive public inquiries with empathy and clarity. Translated difficult policies into actionable next steps while capturing accurate documentation for every interaction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="contact-container">
+        <div class="contact-text">
+          <h2>Ready to optimize your workflow?</h2>
+          <p>Whether you need an automated document-sorting application built, a backlog cleared, or ongoing executive support, let's talk about your operational needs.</p>
+          <p><strong>Email:</strong> <a href="mailto:raffi.ivanov-jones@raffitechva.co.uk">raffi.ivanov-jones@raffitechva.co.uk</a></p>
+          <p><strong>Location:</strong> Birkenhead, UK (GMT)</p>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Project or Support Details</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+          
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button class="btn primary full-width" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Radoslav Ivanov-Jones | Tech & Automation Virtual Assistant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
