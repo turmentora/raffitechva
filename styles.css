@@ -59,6 +59,26 @@ h2 { font-size: 2rem; margin-top: 0; margin-bottom: 0.5rem; letter-spacing: -0.5
 .timeline-item h3 { margin: 0 0 0.5rem; color: var(--text); }
 .timeline-item p { margin: 0; color: var(--muted); }
 
+/* Pricing Grid */
+.pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: transform 0.2s; }
+.price-card:hover { transform: translateY(-4px); }
+.price-card h3 { margin-top: 0; font-size: 1.25rem; color: var(--text); }
+.price-card .price { font-size: 2.2rem; font-weight: 800; color: var(--accent); margin: 1rem 0; letter-spacing: -1px; }
+.price-card ul { list-style: none; padding: 0; margin: 0 0 1.5rem; color: var(--muted); text-align: left; }
+.price-card ul li { margin-bottom: 0.75rem; position: relative; padding-left: 1.5rem; }
+.price-card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+.price-card.featured { border: 2px solid var(--accent); position: relative; transform: scale(1.02); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1); }
+.price-card.featured:hover { transform: scale(1.02) translateY(-4px); }
+
+/* Accordion (FAQ) */
+.accordion details { background: var(--surface); margin-bottom: 1rem; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
+.accordion summary { padding: 1.25rem 1.5rem; font-weight: 600; cursor: pointer; list-style: none; position: relative; color: var(--text); }
+.accordion summary::-webkit-details-marker { display: none; }
+.accordion summary::after { content: '+'; position: absolute; right: 1.5rem; font-size: 1.25rem; color: var(--accent); transition: transform 0.2s; }
+.accordion details[open] summary::after { content: '−'; transform: rotate(180deg); }
+.accordion p { padding: 0 1.5rem 1.25rem; margin: 0; color: var(--muted); border-top: 1px solid var(--border); padding-top: 1rem; }
+
 .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 .contact-form-wrapper { background: var(--surface); padding: 2rem; border-radius: 16px; border: 1px solid var(--border); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); }
 .form-row { margin-bottom: 1.25rem; }
