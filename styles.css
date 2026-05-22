@@ -59,7 +59,6 @@ h2 { font-size: 2rem; margin-top: 0; margin-bottom: 0.5rem; letter-spacing: -0.5
 .timeline-item h3 { margin: 0 0 0.5rem; color: var(--text); }
 .timeline-item p { margin: 0; color: var(--muted); }
 
-/* Pricing Grid */
 .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
 .price-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 2.5rem 2rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); transition: transform 0.2s; }
 .price-card:hover { transform: translateY(-4px); }
@@ -71,7 +70,6 @@ h2 { font-size: 2rem; margin-top: 0; margin-bottom: 0.5rem; letter-spacing: -0.5
 .price-card.featured { border: 2px solid var(--accent); position: relative; transform: scale(1.02); box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.1); }
 .price-card.featured:hover { transform: scale(1.02) translateY(-4px); }
 
-/* Accordion (FAQ) */
 .accordion details { background: var(--surface); margin-bottom: 1rem; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
 .accordion summary { padding: 1.25rem 1.5rem; font-weight: 600; cursor: pointer; list-style: none; position: relative; color: var(--text); }
 .accordion summary::-webkit-details-marker { display: none; }
@@ -93,8 +91,6 @@ input:focus, textarea:focus { outline: none; border-color: var(--accent); box-sh
   .nav-links { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: var(--surface); padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .contact-container { grid-template-columns: 1fr; gap: 2rem; }
-  
-  /* Mobile layout and scrolling fixes */
   .cards { grid-template-columns: 1fr; } 
   .section { padding: 3rem 1.25rem; }
   .section.alt { padding: 2rem 1.25rem; }
