@@ -204,5 +204,32 @@
         </div>
         
         <div class="contact-form-wrapper">
-          <form action="
-            
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY_HERE">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+            <div class="form-row">
+              <label for="message">Project or Support Details</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button class="btn primary full-width" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Radoslav Ivanov-Jones | Tech & Automation Virtual Assistant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
